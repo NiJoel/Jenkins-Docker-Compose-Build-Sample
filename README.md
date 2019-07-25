@@ -11,6 +11,4 @@ docker build -t {repourl}:{port}/centdocker .
 docker push {repourl}:{port}/centdocker
 ```
 
-then you can use it in 
-
-
+then you can use it  Jenkinsfile
