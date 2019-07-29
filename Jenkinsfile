@@ -2,7 +2,7 @@ pipeline {
     agent {
 		docker {
 				image '{repourl}:{port}/centdocker'
-				args '-v /root/.nuget:/root/.nuget -v /var/run/docker.sock:/var/run/docker.sock'
+				args '-v /var/run/docker.sock:/var/run/docker.sock'
 			}
 	}
     stages {
