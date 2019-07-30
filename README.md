@@ -35,3 +35,4 @@ pipeline {
     }
 }
 ```
+or you can install the docker-compose in the alpine container of jenkins to use 'agent any' in the Jenkinsfile
