@@ -8,3 +8,8 @@ RUN yum makecache fast
 RUN yum -y install docker-ce
 COPY ./docker-compose-1.24.1 /usr/local/bin/docker-compose
 RUN chmod +x /usr/local/bin/docker-compose
+#RUN yum -y install openssh-clients
+#COPY ./id_rsa /root/.ssh/id_rsa
+#RUN chmod 600 /root/.ssh/id_rsa
+#COPY ./ssh_config /root/.ssh/config
+#RUN chmod 600 /root/.ssh/config
