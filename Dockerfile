@@ -8,4 +8,3 @@ RUN yum makecache fast
 RUN yum -y install docker-ce
 COPY ./docker-compose-1.24.1 /usr/local/bin/docker-compose
 RUN chmod +x /usr/local/bin/docker-compose
-RUN ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
