@@ -37,12 +37,14 @@ pipeline {
     }
 }
 ```
-or you can install the docker-compose in the alpine container of jenkins to use 'agent any' in the Jenkinsfile
+
+
 
 ## additional
 
 If you want to use shell to sh remote server,you can put the ssh key pair in this folder.
 Then uncomment this code in Dockerfile:
+
 ```
 #RUN yum -y install openssh-clients
 #COPY ./id_rsa /root/.ssh/id_rsa
@@ -50,3 +52,7 @@ Then uncomment this code in Dockerfile:
 #COPY ./ssh_config /root/.ssh/config
 #RUN chmod 600 /root/.ssh/config
 ```
+
+## out of the topic
+
+You can also try to install the docker-compose in the alpine container of jenkins to use 'agent any' in the Jenkinsfile
